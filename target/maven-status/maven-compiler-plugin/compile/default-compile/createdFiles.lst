@@ -1,0 +1,6 @@
+com/example/redis/entity/Person.class
+com/example/redis/config/SpringFoxConfig.class
+com/example/redis/RedisApplication.class
+com/example/redis/repository/PersonRepo.class
+com/example/redis/service/PersonService.class
+com/example/redis/rest/PersonController.class
