@@ -3,16 +3,21 @@ package com.example.redis.rest;
 import java.util.List;
 
 import com.example.redis.entity.Person;
-import com.example.redis.service.PersonService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.redis.service.PersonServiceImpl;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/person")
 public class PersonController {
 
-    @Autowired
-    private PersonService service;
+
+
+
+    private PersonServiceImpl service;
+
+    public PersonController(PersonServiceImpl service) {
+        this.service = service;
+    }
 
     @PostMapping("/save")
     public Person addPerson(@RequestBody Person person){

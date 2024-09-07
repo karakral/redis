@@ -17,6 +17,7 @@ public class Person {
     @Indexed
     private int id;
     private String name;
+
     private String mobile;
     private String email;
     private long personalRate;
